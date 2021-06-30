@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,20 +40,16 @@
 
       .logo {
         position: fixed;
-        top: 50px;
-        left: 50%;
-        margin-left: -125px;
+        top: 25px;
+        left: 25px;
         width: 250px;
         height: 80px;
-      
       }
 
       .logo img {
         width: 250px;
         height: 80px;
       }
-
-
 
       .secim {
         height: 100vh;
@@ -65,11 +61,10 @@
         align-self: center;
       }
 
-      .b img {
+      .b img  {
         justify-content: center;
         align-items: center;
         align-self: center;
-        filter: invert(23%) sepia(46%) saturate(1728%) hue-rotate(224deg) brightness(86%) contrast(103%);
       }
 
       .flex {
@@ -97,8 +92,8 @@
       }
 
       .sec {
-        border: 2px solid #3F308B;
-        background-color: #3F308B;
+        border: 2px solid #3f308b;
+        background-color: #3f308b;
         color: rgb(255, 255, 255);
         padding: 15px 0;
         margin: 20px;
@@ -110,29 +105,25 @@
 
       .geri {
         position: fixed;
-        left: 50px;
-        bottom: 50px;
-        font-weight: 400;
-        border: 2px solid #93CB5C;
-        background-color: #93CB5C;
+        right: 25px;
+        top: 25px;
+        width: 50px;
+
+        /*        font-weight: 400;
+        border: 2px solid #93cb5c;
+        background-color: #93cb5c;
         color: rgb(255, 255, 255);
         padding: 15px;
-        border-radius: 10px;
-        
+        border-radius: 10px; */
       }
 
-      @media screen and (max-width: 768px) {
-        .baslik {
-          font-size: 120%;
-        }
+      .mob {
+        display: none;
+      }
 
-        .geri {
-          position: fixed;
-          left: 25px;
-          bottom: 25px;
-          font-weight: 400;
-          font-size: 100%;
-          padding: 15px;
+      @media screen and (max-width: 1280px) {
+        * {
+          font-size: 95%;
         }
 
         .sec {
@@ -140,29 +131,64 @@
           margin: 20px;
           border-radius: 10px;
           min-width: 120px;
+        }
+
+        .geri {
+          width: 30px;
+        }
+
+        .logo {
+          width: 160px;
+          height: 65px;
+          top: 25px;
+          left: 25px;
+          margin-left: 0px;
+        }
+
+        .logo img {
+          width: 160px;
+          height: 55px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .baslik {
           font-size: 120%;
-          padding: 15px;
-          
         }
 
         .flex {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-      }
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+        }
 
-       .b img {
-         display: none;
-       }
+        .logo {
+          width: 120px;
+          height: 40px;
+        }
 
+        .logo img {
+          width: 120px;
+          height: 40px;
+        }
+
+        .mob {
+          display: inherit;
+          margin: 30px 0;
+        }
+        .desk {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="logo"><a href="#giris"><img src="logo.png" alt=""></a></div>
+    <div class="logo">
+      <a href="#giris"><img src="logo.png" alt="" /></a>
+    </div>
     <!-- ilk bölüm -->
     <div class="onepage" id="giris">
       <div class="secim">
@@ -171,9 +197,8 @@
           <a href="#meta"><p class="sec">Evet</p></a>
           <a href="#enddisi"><p class="sec">Hayır</p></a>
         </div>
-        <a href="#giris"><p class="geri">Başa Dön</p></a>
+        <a href="#giris"><img src="res.svg" class="geri" alt="" /></a>
       </div>
-      
     </div>
     <!-- ilk bölüm sonu -->
 
@@ -230,13 +255,16 @@
           </div>
         </div>
         <!-- ara bölme -->
-        <div class="b"><img src="cizgi.svg" alt=""></div>
+        <div class="b desk"><img src="cizgi.svg" alt="" /></div>
+        <!-- ara bölme sonu-->
+        <!-- ara bölme -->
+        <div class="b mob"><img src="cizgi2.svg" alt="" /></div>
         <!-- ara bölme sonu-->
         <!-- iki -->
         <div class="b">
           <div class="baslik">
-            Adjuvan A.İ. tedavisinde 12 ay tamamlandıktan sonra ya da A.İ.
-            tedavisi sonrası 12 ay içinde nüks/metastaz mevcut mu?
+            Adjuvan A.İ. tedavisinde 12 ay tamamlandıktan sonra ya da Adjuvan
+            A.İ. tedavisi sonrası 12 ay içinde nüks/metastaz mevcut mu?
           </div>
           <div class="secenekler">
             <a href="#fv"><p class="sec">Evet</p></a>
@@ -290,7 +318,7 @@
     <!-- bölüm -->
     <div class="onepage" id="norelapsai">
       <div class="secim">
-        <div class="baslik">Daha önce fulvestrant kullanmış mı?</div>
+        <div class="baslik">Daha önce Fulvestrant kullanmış mı?</div>
         <div class="secenekler">
           <a href="#enddisi"><p class="sec">Evet</p></a>
           <a href="#fvno"><p class="sec">Hayır</p></a>
@@ -327,7 +355,7 @@
     <!-- bölüm -->
     <div class="onepage" id="fv">
       <div class="secim">
-        <div class="baslik">Daha önce fulvestrant kullanmış mı?</div>
+        <div class="baslik">Daha önce Fulvestrant kullanmış mı?</div>
         <div class="secenekler">
           <a href="#enddisi"><p class="sec">Evet</p></a>
           <a href="#enddirenc"><p class="sec">Hayır</p></a>
