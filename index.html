@@ -7,170 +7,180 @@
     <title>Reampla</title>
 
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    outline: 0;
-    font-family: 'Mulish', sans-serif;
-    border: 0;
-    background-color: rgb(44, 44, 44);
-    color: #fff;
-    overflow: hidden;
-    
-    
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        outline: 0;
+        font-family: "Mulish", sans-serif;
+        border: 0;
+        background-color: #f8f8f8;
+        color: black;
+        overflow: hidden;
+      }
 
-}
+      html {
+        scroll-behavior: smooth;
+      }
 
-html {
-    scroll-behavior: smooth;
-}
+      a {
+        color: rgb(54, 54, 54);
+      }
+      :visited {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+      }
 
-a {
-    color: rgb(54, 54, 54);
+      .onepage {
+        height: 100%;
+        width: 100%;
+      }
 
-}:visited {
-    text-decoration: none;
-    color: rgb(54, 54, 54);
-}
+      .logo {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+      
+      }
 
-img {
-    max-width: 24px;
-}
-
-.onepage {
-    height: 100%;
-    width: 100%;
-}
-
-
-.secim {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    
-}
-
-.baslik {
-    font-size: 140%;
-    font-weight: 400;
-
-}
-
-.secenekler {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-gap: 0rem;
-    justify-items: center;
-
-}
-
-.sec {
-    border: 2px solid rgb(233, 233, 233);
-    background-color: rgb(233, 233, 233);
-    color: rgb(54, 54, 54);
-    padding: 20px 0;
-    margin: 30px;
-    border-radius: 10px;
-    min-width: 300px;
-    font-size: 120%;
-    font-weight: 700;
-}
-
-.geri {
-    position: fixed;
-    left: 50px;
-    bottom: 50px;
-    font-weight: 400;
-}
-
-.m {
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 768px) {
-
-.mob {
-  margin-top: -50px;
-}
-
-.baslik {
-    font-size: 100%;
-}
-
-.geri {
-    position: fixed;
-    left: 25px;
-    bottom: 25px;
-    font-weight: 400;
-}
-
-.sec {
-    border: 2px solid rgb(233, 233, 233);
-    background-color: rgb(233, 233, 233);
-    color: rgb(54, 54, 54);
-    padding: 10px 5px;
-    margin: 20px;
-    border-radius: 5px;
-    min-width: 120px;
-    font-size: 100%;
-    font-weight: 400;
-}
-
-img {
-    max-width: 15px;
-}
-
-.m {
-  margin: 15px 0;
-}
+      .logo img {
+        max-width: 300px;
+      }
 
 
-  }
+
+      .secim {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+      }
+
+      .b img {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        filter: invert(23%) sepia(46%) saturate(1728%) hue-rotate(224deg) brightness(86%) contrast(103%);
+      }
+
+      .flex {
+        display: grid;
+        grid-template-columns: 20fr 1fr 20fr;
+        grid-gap: 2em;
+        justify-self: center;
+      }
+
+      .bolmeli {
+        max-width: 90%;
+        margin: auto;
+      }
+
+      .baslik {
+        font-size: 140%;
+        font-weight: 400;
+      }
+
+      .secenekler {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0rem;
+        justify-items: center;
+      }
+
+      .sec {
+        border: 2px solid #3F308B;
+        background-color: #3F308B;
+        color: rgb(255, 255, 255);
+        padding: 15px 0;
+        margin: 20px;
+        border-radius: 10px;
+        min-width: 240px;
+        font-size: 120%;
+        font-weight: 400;
+      }
+
+      .geri {
+        position: fixed;
+        left: 50px;
+        bottom: 50px;
+        font-weight: 400;
+        border: 2px solid #93CB5C;
+        background-color: #93CB5C;
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        border-radius: 10px;
+        
+      }
+
+      @media screen and (max-width: 768px) {
+        .baslik {
+          font-size: 100%;
+        }
+
+        .geri {
+          position: fixed;
+          left: 25px;
+          bottom: 25px;
+          font-weight: 400;
+        }
+
+        .sec {
+          border: 2px solid rgb(233, 233, 233);
+          background-color: rgb(233, 233, 233);
+          color: rgb(54, 54, 54);
+          padding: 10px 5px;
+          margin: 20px;
+          border-radius: 5px;
+          min-width: 120px;
+          font-size: 100%;
+          font-weight: 400;
+        }
+      }
     </style>
-
   </head>
   <body>
+    <div class="logo"><img src="logo.png" alt=""></div>
     <!-- ilk bölüm -->
     <div class="onepage" id="giris">
       <div class="secim">
-        <p class="baslik">ER %10 ve üzeri mi?</p>
+        <p class="baslik">ER %10 ve üzeri, HER2- mi?</p>
         <div class="secenekler">
-          <a href="#hr"><p class="sec">Evet</p></a>
+          <a href="#meta"><p class="sec">Evet</p></a>
           <a href="#enddisi"><p class="sec">Hayır</p></a>
         </div>
         <a href="#giris"><p class="geri">Başa Dön</p></a>
       </div>
+      
     </div>
     <!-- ilk bölüm sonu -->
 
     <!-- bölüm -->
     <div class="onepage" id="enddisi">
       <div class="secim">
-        <p class="baslik">Endikasyon Dışı.</p>
+        <p class="baslik">Endikasyon dışı.</p>
       </div>
     </div>
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
-    <div class="onepage" id="hr">
+    <div class="onepage" id="meta">
       <div class="secim">
+        <p class="baslik">Metastatik mi?</p>
         <div class="secenekler">
-          <a href="#hr+"><p class="sec">HR+</p></a>
-          <a href="#her2"><p class="sec">HER2-</p></a>
+          <a href="#metaevet"><p class="sec">Evet</p></a>
+          <a href="#metahayir"><p class="sec">Hayır</p></a>
         </div>
       </div>
     </div>
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
-    <div class="onepage" id="hr+">
+    <div class="onepage" id="metaevet">
       <div class="secim">
         <div class="secenekler">
           <a href="#pm"><p class="sec">Postmenopozal</p></a>
@@ -181,28 +191,41 @@ img {
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
-    <div class="onepage" id="pm">
+    <div class="onepage" id="metahayir">
       <div class="secim">
-        <div class="baslik">Metastatik mi?</div>
-        <div class="secenekler">
-          <a href="#meta"><p class="sec">Evet</p></a>
-          <a href="#enddisi"><p class="sec">Hayır</p></a>
-        </div>
+        <p class="baslik">CDK 4/6 tedavisinde kullanımı önerilmemektedir.</p>
       </div>
     </div>
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
-    <div class="onepage" id="meta">
-      <div class="secim">
-        <div class="baslik">
-          Adjuvan tedavisinin tamamlanmasından 12 ay sonra relaps gerçekleşti
-          mi?
+    <div class="onepage bolmeli" id="pm">
+      <div class="secim flex">
+        <div class="b">
+          <div class="baslik">
+            Adjuvan tedavisinin tamamlanmasından 12 ay sonra relaps gerçekleşti
+            mi?
+          </div>
+          <div class="secenekler">
+            <a href="#relaps"><p class="sec">Evet</p></a>
+            <a href="#norelaps"><p class="sec">Hayır</p></a>
+          </div>
         </div>
-        <div class="secenekler">
-          <a href="#relaps"><p class="sec">Evet</p></a>
-          <a href="#norelaps"><p class="sec">Hayır</p></a>
+        <!-- ara bölme -->
+        <div class="b"><img src="cizgi.svg" alt=""></div>
+        <!-- ara bölme sonu-->
+        <!-- iki -->
+        <div class="b">
+          <div class="baslik">
+            Adjuvan A.İ. tedavisinde 12 ay tamamlandıktan sonra ya da A.İ.
+            tedavisi sonrası 12 ay içinde nüks/metastaz mevcut mu?
+          </div>
+          <div class="secenekler">
+            <a href="#fv"><p class="sec">Evet</p></a>
+            <a href="#norelaps"><p class="sec">Hayır</p></a>
+          </div>
         </div>
+        <!-- iki sonu-->
       </div>
     </div>
     <!-- bölüm sonu -->
@@ -210,12 +233,11 @@ img {
     <!-- bölüm -->
     <div class="onepage" id="relaps">
       <div class="secim">
-        <div class="baslik">
-          Endokrin duyarlı; Palbosiklib + Letrozol kombine tedavi
-        </div>
+        <p class="baslik">
+          Endokrin duyarlı; Palbosiklib + Letrozol kombine tedavi.
+        </p>
       </div>
     </div>
-
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
@@ -225,7 +247,7 @@ img {
           İleri evre meme CA için daha önce endokrin tedavi almış mı?
         </div>
         <div class="secenekler">
-          <a href="#enddisi"><p class="sec">Evet</p></a>
+          <a href="#ca"><p class="sec">Evet</p></a>
           <a href="#relaps"><p class="sec">Hayır</p></a>
         </div>
       </div>
@@ -233,112 +255,67 @@ img {
     <!-- bölüm sonu -->
 
     <!-- bölüm -->
-    <div class="onepage" id="her2">
+    <div class="onepage" id="ca">
       <div class="secim">
-        <div class="secenekler">
-          <a href="#pmh"><p class="sec">Postmenopozal</p></a>
-          <a href="#enddisi"><p class="sec">Premenopozal</p></a>
-        </div>
-      </div>
-    </div>
-    <!-- bölüm sonu -->
-
-    <!-- bölüm -->
-    <div class="onepage" id="pmh">
-      <div class="secim">
-        <div class="baslik">Metastatik mi?</div>
-        <div class="secenekler">
-          <a href="#pmhevet"><p class="sec">Evet</p></a>
-          <a href="#enddisi"><p class="sec">Hayır</p></a>
-        </div>
-      </div>
-    </div>
-    <!-- bölüm sonu -->
-
-    <!-- bölüm -->
-    <div class="onepage " id="pmhevet">
-      <div class="secim">
-        <div class="baslik mob">
-          Adjuvan tedavisinin tamamlanmasından 12 ay sonra relaps gerçekleşti
+        <div class="baslik">
+          Adjuvan A.İ. tedavisi alırken ilk 12 ay içerisinde relaps gerçekleşti
           mi?
         </div>
         <div class="secenekler">
-          <a href="#relaps"><p class="sec">Evet</p></a>
-          <a href="#norelaps"><p class="sec">Hayır</p></a>
-        </div>
-
-        <!-- iki -->
-        <div class="baslik">Daha önce Fulvestrant kullanmış mı?</div>
-        <div class="secenekler">
           <a href="#enddisi"><p class="sec">Evet</p></a>
-          <a href="#fvhayir"><p class="sec">Hayır</p></a>
+          <a href="#norelapsai"><p class="sec">Hayır</p></a>
         </div>
-
-       
-        <!-- iki sonu-->
-
-        <!-- üç -->
-        <div class="baslik">
-          Adjuvan A.İ. tedavisinde 12 ay tamamlandıktan sonra ya da A.İ.
-          tedavisi sonrası 12 ay içinde nüks/metastaz mevcut mu?
-        </div>
-        <div class="secenekler">
-          <a href="#aimetaevet"><p class="sec">Evet</p></a>
-          <a href="#enddisi"><p class="sec">Hayır</p></a>
-        </div>
-        <!-- üç sonu-->
-
-        <!-- dört -->
-        <div class="baslik m">
-          <img src="warning.png" alt=""> Adjuvan A.İ. tedavisi alırken ilk 12 ay içinde relaps görülen
-          hastalarda endikasyon dışıdır.
-        </div>
-        <!-- dört sonu-->
-
-        <!-- beş -->
-        <div class="baslik m">
-          <img src="warning.png" alt=""> Metastatik hastalık nedeniyle 1 sıradan fazla A.İ. tedavisi almış
-          hastalarda endikasyon dışıdır.
-        </div>
-        <!-- beş sonu-->
       </div>
     </div>
     <!-- bölüm sonu -->
 
-     <!-- ikinin biri -->
-     <div class="onepage" id="fvhayir">
-        <div class="secim">
-          <div class="baslik">1 sıra A.İ. tedavisi almış mı?</div>
-          <div class="secenekler">
-            <a href="#aievet"><p class="sec">Evet</p></a>
-            <a href="#enddisi"><p class="sec">Hayır</p></a>
-          </div>
+    <!-- bölüm -->
+    <div class="onepage" id="norelapsai">
+      <div class="secim">
+        <div class="baslik">Daha önce fulvestrant kullanmış mı?</div>
+        <div class="secenekler">
+          <a href="#enddisi"><p class="sec">Evet</p></a>
+          <a href="#fvno"><p class="sec">Hayır</p></a>
         </div>
       </div>
-      <!-- ikinin biri sonu -->
+    </div>
+    <!-- bölüm sonu -->
 
-      <!-- ikinin ikisi -->
-      <div class="onepage" id="aievet">
-        <div class="secim">
-          <div class="baslik">
-            Metastatik tedavi için 1 sıra 6 ay A.İ. tedavisi alıp sonrasında
-            progresyon mevcut mu?
-          </div>
-          <div class="secenekler">
-            <a href="#aimetaevet"><p class="sec">Evet</p></a>
-            <a href="#enddisi"><p class="sec">Hayır</p></a>
-          </div>
+    <!-- bölüm -->
+    <div class="onepage" id="fvno">
+      <div class="secim">
+        <div class="baslik">
+          Metastatik tedavi için 1 sıra 6 ay A.İ. tedavisi alıp sonrasında
+          progresyon mevcut mu?
+        </div>
+        <div class="secenekler">
+          <a href="#enddirenc"><p class="sec">Evet</p></a>
+          <a href="#enddisi"><p class="sec">Hayır</p></a>
         </div>
       </div>
-      <!-- ikinin ikisi sonu -->
-      <!-- ikinin üçü -->
-      <div class="onepage" id="aimetaevet">
-        <div class="secim">
-          <div class="baslik">
-            Endokrin dirençli; Palbosiklib + Fulvestrant kombine tedavi.
-          </div>
+    </div>
+    <!-- bölüm sonu -->
+
+    <!-- bölüm -->
+    <div class="onepage" id="enddirenc">
+      <div class="secim">
+        <p class="baslik">
+          Endokrin dirençli; Palbosiklib + Fulvestrant kombine tedavi.
+        </p>
+      </div>
+    </div>
+    <!-- bölüm sonu -->
+
+    <!-- bölüm -->
+    <div class="onepage" id="fv">
+      <div class="secim">
+        <div class="baslik">Daha önce fulvestrant kullanmış mı?</div>
+        <div class="secenekler">
+          <a href="#enddisi"><p class="sec">Evet</p></a>
+          <a href="#enddirenc"><p class="sec">Hayır</p></a>
         </div>
       </div>
-      <!-- ikinin üçü sonu -->
+    </div>
+    <!-- bölüm sonu -->
   </body>
 </html>
